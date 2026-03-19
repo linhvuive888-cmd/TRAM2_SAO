@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trạm 2: Trí Tuệ Tuổi Trẻ</title>
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --accent-yellow: #ffeb3b;
+        }
+
+        body {
+            margin: 0; padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            display: flex; justify-content: center; align-items: center; min-height: 100vh;
+        }
+
+        .game-container {
+            width: 100%; max-width: 450px; height: 95vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover; background-position: center;
+            position: relative; border-radius: 20px; overflow-y: auto;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+            display: flex; flex-direction: column; color: white;
+            border: 3px solid rgba(255,255,255,0.1);
+        }
+
+        .header { text-align: center; padding: 20px 15px; }
+        
+        .requirement {
+            font-size: 0.85rem; font-style: italic; color: #eee;
+            background: rgba(0, 0, 0, 0.5); padding: 12px;
+            border-radius: 12px; margin-top: 10px; 
+            border-left: 5px solid var(--accent-yellow);
+            line-height: 1.4;
+        }
+
+        .audio-section {
+            background: rgba(255, 255, 255, 0.95); margin: 10px 15px; padding: 20px;
+            border-radius: 15px; text-align: center; color: #333;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        audio { width: 100%; margin-top: 10px; }
+
+        .morse-table-container {
+            margin: 10px 15px;
+            text-align: center;
+        }
+
+        .morse-image {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+
+        .footer-note { 
+            padding: 15px; text-align: center; font-size: 0.8rem; 
+            opacity: 0.8; background: rgba(0,0,0,0.3);
+            margin-top: auto;
+        }
+
+        /* Tùy chỉnh thanh cuộn cho mượt */
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-thumb { background: var(--accent-yellow); border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="game-container">
+    <div class="header">
+        <h1 style="margin:0; font-size: 1.8rem;">MẬT THƯ ★</h1>
+        <p style="color: var(--accent-yellow); font-weight: bold; margin-top: 5px;">TRẠM 2: TRÍ TUỆ TUỔI TRẺ (10 điểm)</p>
+        <div class="requirement">
+            <b>Yêu cầu:</b> Đây là một Khẩu hiệu hành động của đoàn viên. Bạn hãy nhấn chọn audio để nghe, tra cứu bảng mã Morse bên dưới để giải mã nội dung; Nhập câu trả lời vào <b>App hệ thống</b> để hoàn thành Trạm 2 + Nhận manh mối 2.
+        </div>
+    </div>
+
+    <div class="audio-section">
+        <strong style="color: var(--primary-blue); letter-spacing: 1px;">🔊 NGHE MẬT MÃ MORSE</strong>
+        <audio controls>
+            <source src="stxk.wav" type="audio/wav">
+            Trình duyệt của bạn không hỗ trợ phát âm thanh.
+        </audio>
+    </div>
+
+    <div class="morse-table-container">
+        <p style="margin-bottom: 8px; font-weight: bold; font-size: 0.9rem;">📜 BẢNG TRA CỨU QUỐC TẾ</p>
+        <img src="bang-morse.jpg" alt="Bảng mã Morse" class="morse-image">
+    </div>
+
+    <div class="footer-note">Đoàn trường THPT Đakrông - Khơi nguồn giấc mơ số</div>
+</div>
+
+</body>
+</html>
